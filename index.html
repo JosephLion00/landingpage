@@ -23,6 +23,26 @@
             justify-content: center;
             padding: 1rem; /* Adiciona um pequeno padding para telas menores */
         }
+
+        /* Estilo para o botão com gradiente animado */
+        .gradient-animated-button {
+            background-image: linear-gradient(to right, #22C55E 0%, #EAB308 50%, #EF4444 100%); /* Verde, Amarelo, Vermelho */
+            background-size: 400% 400%; /* Aumenta o tamanho do background para a animação */
+            animation: gradientAnimation 5s ease infinite; /* Animação suave, com duração de 5 segundos, repetindo infinitamente */
+        }
+
+        /* Definição da animação de gradiente */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%; /* Posição inicial do gradiente */
+            }
+            50% {
+                background-position: 100% 50%; /* Posição intermediária do gradiente */
+            }
+            100% {
+                background-position: 0% 50%; /* Volta à posição inicial */
+            }
+        }
     </style>
 </head>
 <body>
@@ -37,29 +57,32 @@
 
         <!-- Seção dos links dos botões -->
         <div class="space-y-4">
-            <a href="https://wa.me/5554999163003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Igreja%20Batista%20em%20Gramado." target="_blank" rel="noopener noreferrer"
-               class="block bg-green-500 text-white py-3 px-6 rounded-xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-green-300">
-                Fale conosco
-            </a>
             <a href="https://www.youtube.com/@igrejabatistaemgramado8906" target="_blank" rel="noopener noreferrer"
-               class="block bg-red-600 text-white py-3 px-6 rounded-xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-red-300">
-                Youtube
+               class="block bg-red-600 text-white py-3 px-6 rounded-3xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-red-300 max-w-xs mx-auto">
+                Celebrações
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-               class="block bg-blue-700 text-white py-3 px-6 rounded-xl text-lg font-semibold shadow-md hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300">
-                Facebook
+            <a href="https://g.co/kgs/6iR46xa" target="_blank" rel="noopener noreferrer"
+               class="block bg-blue-700 text-white py-3 px-6 rounded-3xl text-lg font-semibold shadow-md hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300 max-w-xs mx-auto">
+                Endereço
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-               class="block bg-indigo-500 text-white py-3 px-6 rounded-xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-indigo-300">
+            <a href="https://wa.me/5554999163003?text=Ol%C3%A1%2C%20gostaria%20de%20participar%20numa%20c%C3%A9lula." target="_blank" rel="noopener noreferrer"
+               class="block bg-indigo-500 text-white py-3 px-6 rounded-3xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-indigo-300 max-w-xs mx-auto">
+                Células
+            </a>
+             <a href="https://wa.me/5554999163003?text=Ol%C3%A1%2C%20gostaria%20fazer%20a%20minha%20inscri%C3%A7%C3%A3o%20no%20Face%20a%20Face%20com%20Deus." target="_blank" rel="noopener noreferrer"
+               class="block text-white py-3 px-6 rounded-3xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300 max-w-xs mx-auto gradient-animated-button">
                 Face a Face com Deus
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-               class="block bg-purple-600 text-white py-3 px-6 rounded-xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-purple-300">
-                Quero ser parte da IBG
+            <a href="https://wa.me/5554999163003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Igreja%20Batista%20em%20Gramado." target="_blank" rel="noopener noreferrer"
+               class="block bg-green-500 text-white py-3 px-6 rounded-3xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-green-300 max-w-xs mx-auto">
+                Fale conosco
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer"
-               class="block bg-orange-500 text-white py-3 px-6 rounded-xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-orange-300">
-                Encontre sua célula aqui
+            <a href="https://wa.me/5554999163003?text=Ol%C3%A1%2C%20gostaria%20de%20participar%20numa%20c%C3%A célula." target="_blank" rel="noopener noreferrer"
+               class="block bg-red-500 text-white py-3 px-6 rounded-3xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-red-300 max-w-xs mx-auto">
+                Pedido de Oração
+            </a>
+            <a href="#" id="copyPixButton" class="block bg-orange-500 text-white py-3 px-6 rounded-3xl text-lg font-semibold shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-orange-300 max-w-xs mx-auto">
+                Contribua generosamente
             </a>
         </div>
 
@@ -68,5 +91,48 @@
             <p>&copy; 2025 Igreja Batista em Gramado. Todos os direitos reservados.</p>
         </div>
     </div>
+
+    <!-- Mensagem de copiado (inicialmente oculta) -->
+    <div id="messageBox" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg opacity-0 transition-opacity duration-300 z-50">
+        Código PIX copiado!
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const copyPixButton = document.getElementById('copyPixButton');
+            const messageBox = document.getElementById('messageBox');
+            // O código PIX que será copiado
+            const pixCode = "00020126360014br.gov.bcb.pix0114338032170001995204000053039865802BR5925Igreja Batista Em Gramado6007Gramado622605226EdVnGfgJXUubJyMnRhslH63043253";
+
+            if (copyPixButton) { // Garante que o botão existe antes de adicionar o listener
+                copyPixButton.addEventListener('click', function(event) {
+                    event.preventDefault(); // Impede o comportamento padrão do link
+
+                    // Cria um elemento temporário para copiar o texto
+                    const tempInput = document.createElement('textarea');
+                    tempInput.value = pixCode;
+                    document.body.appendChild(tempInput);
+                    tempInput.select(); // Seleciona o texto no input temporário
+                    document.execCommand('copy'); // Copia o texto selecionado
+                    document.body.removeChild(tempInput); // Remove o input temporário
+
+                    // Exibe a mensagem de copiado
+                    if (messageBox) {
+                        messageBox.classList.remove('hidden', 'opacity-0');
+                        messageBox.classList.add('opacity-100');
+
+                        // Oculta a mensagem após alguns segundos
+                        setTimeout(() => {
+                            messageBox.classList.remove('opacity-100');
+                            messageBox.classList.add('opacity-0');
+                            setTimeout(() => {
+                                messageBox.classList.add('hidden');
+                            }, 300); // Tempo da transição de opacidade para ocultar
+                        }, 2000); // Tempo que a mensagem fica visível (2 segundos)
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
